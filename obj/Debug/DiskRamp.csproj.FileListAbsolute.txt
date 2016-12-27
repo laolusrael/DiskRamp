@@ -1,0 +1,12 @@
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\bin\Debug\FileDetective.exe.config
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\FileDetective.exe
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\FileDetective.pdb
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\bin\Debug\DiskRamp.exe.config
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\DiskRamp.csprojResolveAssemblyReference.cache
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\FileDetective.MainUI.resources
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\DiskRamp.Properties.Resources.resources
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\DiskRamp.csproj.GenerateResource.Cache
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\DiskRamp.TrustInfo.xml
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\DiskRamp.exe.manifest
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\DiskRamp.exe
+C:\Users\laolu\documents\visual studio 2015\Projects\FileDetective\FileDetective\obj\Debug\DiskRamp.pdb
