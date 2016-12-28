@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Disk Ramp")]
 [assembly: AssemblyDescription("Disk Ramp searches through your disk for large files, and allows you to delete them easily.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Seun S. Lawal (Laolusrael)")]
+[assembly: AssemblyCompany("Automata")]
 [assembly: AssemblyProduct("Disk Ramp")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]

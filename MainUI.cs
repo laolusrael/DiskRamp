@@ -253,6 +253,8 @@ namespace FileDetective
                 }
 
                 lblProgress.Text = "Files deleted successfully";
+
+                _UpdateGrid();
             }
         }
 

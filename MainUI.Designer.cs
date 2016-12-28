@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUI));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblRunning = new System.Windows.Forms.Label();
@@ -46,11 +47,11 @@
             this.nudMaxSz = new System.Windows.Forms.NumericUpDown();
             this.nudMixSz = new System.Windows.Forms.NumericUpDown();
             this.dgv = new System.Windows.Forms.DataGridView();
+            this.cmsActions = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.actDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.actDetails = new System.Windows.Forms.ToolStripMenuItem();
             this.fbd = new System.Windows.Forms.FolderBrowserDialog();
             this.bw = new System.ComponentModel.BackgroundWorker();
-            this.cmsActions = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.actDetails = new System.Windows.Forms.ToolStripMenuItem();
-            this.actDelete = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -298,6 +299,31 @@
             this.dgv.Size = new System.Drawing.Size(450, 406);
             this.dgv.TabIndex = 0;
             // 
+            // cmsActions
+            // 
+            this.cmsActions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.actDelete,
+            this.actDetails});
+            this.cmsActions.Name = "cmsActions";
+            this.cmsActions.Size = new System.Drawing.Size(110, 48);
+            this.cmsActions.Opening += new System.ComponentModel.CancelEventHandler(this.cmsActions_Opening);
+            // 
+            // actDelete
+            // 
+            this.actDelete.Enabled = false;
+            this.actDelete.Name = "actDelete";
+            this.actDelete.Size = new System.Drawing.Size(109, 22);
+            this.actDelete.Text = "&Delete";
+            this.actDelete.Click += new System.EventHandler(this.actDelete_Click);
+            // 
+            // actDetails
+            // 
+            this.actDetails.Enabled = false;
+            this.actDetails.Name = "actDetails";
+            this.actDetails.Size = new System.Drawing.Size(109, 22);
+            this.actDetails.Text = "D&etails";
+            this.actDetails.Click += new System.EventHandler(this.actDetails_Click);
+            // 
             // fbd
             // 
             this.fbd.ShowNewFolderButton = false;
@@ -310,39 +336,15 @@
             this.bw.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bw_ProgressChanged);
             this.bw.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bw_RunWorkerCompleted);
             // 
-            // cmsActions
-            // 
-            this.cmsActions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.actDelete,
-            this.actDetails});
-            this.cmsActions.Name = "cmsActions";
-            this.cmsActions.Size = new System.Drawing.Size(153, 70);
-            this.cmsActions.Opening += new System.ComponentModel.CancelEventHandler(this.cmsActions_Opening);
-            // 
-            // actDetails
-            // 
-            this.actDetails.Enabled = false;
-            this.actDetails.Name = "actDetails";
-            this.actDetails.Size = new System.Drawing.Size(152, 22);
-            this.actDetails.Text = "D&etails";
-            this.actDetails.Click += new System.EventHandler(this.actDetails_Click);
-            // 
-            // actDelete
-            // 
-            this.actDelete.Enabled = false;
-            this.actDelete.Name = "actDelete";
-            this.actDelete.Size = new System.Drawing.Size(152, 22);
-            this.actDelete.Text = "&Delete";
-            this.actDelete.Click += new System.EventHandler(this.actDelete_Click);
-            // 
-            // Form1
+            // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(687, 410);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MainUI";
             this.Text = "File Detective";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
